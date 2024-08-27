@@ -12,4 +12,4 @@ SELECT
 FROM sales
 JOIN highest h
   ON sales.branch = h.branch
-    AND sales.date = h.date
+    AND sales.date = h.date-
