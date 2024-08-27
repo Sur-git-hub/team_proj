@@ -2,7 +2,7 @@ WITH highest AS (
   SELECT
     branch,
     date,
-    MAX(unit_price) AS highest_price
+    MAX(unit_price) AS Highest_Amount
   FROM sales
   GROUP BY branch, date
 )
