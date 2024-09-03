@@ -1,1 +1,1 @@
-here is my text1.txt
+Hey this is one important thing we want to learn git commands 
