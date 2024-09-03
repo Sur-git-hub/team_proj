@@ -10,6 +10,7 @@ WITH sales_per_car AS (
     GROUP BY c.id, c.car_make, c.model, c.motor_type, c.year_of_production
 ),
  
+-- Budget Per Annually Sales
 budget_per_annually AS (
     SELECT *,
          average_sales_2024 * 12 AS annual_planned_sales_2020
