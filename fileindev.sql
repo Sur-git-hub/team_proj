@@ -31,5 +31,5 @@ FROM budget_per_annually b
 JOIN car_sales cs
 ON b.id = cs.cars_id
 GROUP BY b.car_make, b.model, b.motor_type, b.year_of_production, b.annual_planned_sales_2020;
---- This statement shows the values of Car Sales per annually where year is = 2020
+
 
