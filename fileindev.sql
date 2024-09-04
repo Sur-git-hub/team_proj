@@ -10,10 +10,6 @@ WITH sales_per_car AS (
     GROUP BY c.id, c.car_make, c.model, c.motor_type, c.year_of_production
 ),
 
-test_cte AS (
-     SELECT * FROM sales_per_car WHERE c.id > 1;
-)
-
 budget_per_annually AS (
     SELECT *,
          average_sales_2024 * 12 AS annual_planned_sales_2020
