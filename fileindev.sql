@@ -15,7 +15,8 @@ budget_per_annually AS (
          average_sales_2024 * 12 AS annual_planned_sales_2020
     FROM sales_per_car
 )
-     
+
+----- do not change this code again and again   
 SELECT 
      b.version --version added
      b.car_make,
