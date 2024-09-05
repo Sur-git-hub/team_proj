@@ -1,4 +1,4 @@
-WITH sales_per_car AS (
+WITH sales_per_ bike AS (
     SELECT c.id,
          c.car_make,
          c.model,
@@ -16,8 +16,10 @@ budget_per_annually AS (
     FROM sales_per_car
 )
 
------ do not change this code again and again
-SELECT b.car_make,
+----- do not change this code again and again   
+SELECT 
+     b.version --version added
+     b.car_make,
      b.model,
      b.motor_type,
      b.year_of_production,
