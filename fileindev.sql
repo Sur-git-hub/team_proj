@@ -6,7 +6,7 @@ WITH sales_per_car AS (
            c.year_of_production,
            AVG(cs.sales)::INT AS a
     FROM cars c JOIN car_sales cs ON c.id = cs.cars_id
-    WHERE c.year_of_production = 2020
+    WHERE c.year_of_production > 2024
     GROUP BY c.id, c.car_make, c.model, c.motor_type, c.year_of_production
 ),
 
