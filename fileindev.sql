@@ -1,4 +1,4 @@
-WITH sales_per_car AS (
+WITH sales_per_ bike AS (
     SELECT c.id,
          c.car_make,
          c.model,
