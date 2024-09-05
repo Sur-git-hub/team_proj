@@ -16,7 +16,6 @@ budget_per_annually AS (
     FROM sales_per_car
 )
 
------ do not change this code again and again   
 SELECT 
      b.version --version added
      b.car_make,
