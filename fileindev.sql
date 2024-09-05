@@ -15,7 +15,7 @@ budget_per_annually AS (
          average_sales_2024 * 12 AS annual_planned_sales_2020
     FROM sales_per_car
 )
-     
+------ yearly production of 2020---------     
 SELECT b.car_make,
      b.model,
      b.motor_type,
