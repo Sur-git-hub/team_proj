@@ -6,7 +6,7 @@ WITH sales_per_car AS (
            c.year_of_production,
            AVG(cs.sales)::INT AS a
     FROM cars c JOIN car_sales cs ON c.id = cs.cars_id
-    WHERE c.year_of_production = 2020
+    WHERE c.year_of_production > 2024
     GROUP BY c.id, c.car_make, c.model, c.motor_type, c.year_of_production
 ),
 
@@ -15,7 +15,7 @@ budget_per_annually AS (
          average_sales_2024 * 12 AS annual_planned_sales_2020
     FROM sales_per_car
 )
------- yearly production of 2020---------     
+
 SELECT b.car_make,
      b.model,
      b.motor_type,
