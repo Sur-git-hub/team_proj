@@ -18,7 +18,9 @@ budget_per_annually AS (
     FROM sales_per_car
 )
      
-SELECT b.car_make,
+SELECT 
+     b.version --version added
+     b.car_make,
      b.model,
      b.motor_type,
      b.year_of_production,
