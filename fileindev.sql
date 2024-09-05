@@ -16,6 +16,7 @@ budget_per_annually AS (
     FROM sales_per_car
 )
 
+----- do not change this code again and again
 SELECT b.car_make,
      b.model,
      b.motor_type,
