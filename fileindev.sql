@@ -9,7 +9,7 @@ WITH sales_per_ bike AS (
     WHERE c.year_of_production > 2024
     GROUP BY c.id, c.car_make, c.model, c.motor_type, c.year_of_production
 ),
-------i add yearly sale 2024-------
+-----add yearly sale 2020
 budget_per_annually AS (
     SELECT *,
          average_sales_2024 * 12 AS annual_planned_sales_2020
