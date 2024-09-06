@@ -13,7 +13,7 @@ WITH sales_per_ bike AS (
 budget_per_annually AS (
     SELECT *,
          average_sales_2024 * 12 AS annual_planned_sales_2020
-    FROM sales_per_car
+    FROM sales_per_car LIMIT 1500 --limit added
 )
 --- add by jai
 SELECT 
