@@ -15,19 +15,19 @@ budget_per_annually AS (
          average_sales_2024 * 12 AS annual_planned_sales_2020
     FROM sales_per_car
 )
--- by jai
+
 SELECT 
      b.version --version added
      b.car_make,
      b.model,
      b.motor_type,
      b.year_of_production,
-     SUM(cs.sales) AS actual_ytd_sales_2022,
+     SUM(cs.sales) AS actual_ytd_sales_2020,
      b.annual_planned_sales_2020,
-     b.annual_planned_sales_2020 - SUM(cs.sales) AS remaining_annual_sales_2022
+     b.annual_planned_sales_2020 - SUM(cs.sales) AS remaining_annual_sales_2020
 FROM budget_per_annually b
 JOIN car_sales cs
 ON b.id = cs.cars_id
 GROUP BY b.car_make, b.model, b.motor_type, b.year_of_production, b.annual_planned_sales_2020;
-
+--- This statement shows the values of Car Sales per annually where year is = 2020
 
