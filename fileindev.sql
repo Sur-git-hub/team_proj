@@ -22,9 +22,9 @@ SELECT
      b.model,
      b.motor_type,
      b.year_of_production,
-     SUM(cs.sales) AS actual_ytd_sales_2020,
+     SUM(cs.sales) AS actual_ytd_sales_2022,
      b.annual_planned_sales_2020,
-     b.annual_planned_sales_2020 - SUM(cs.sales) AS remaining_annual_sales_2020
+     b.annual_planned_sales_2020 - SUM(cs.sales) AS remaining_annual_sales_2022
 FROM budget_per_annually b
 JOIN car_sales cs
 ON b.id = cs.cars_id
