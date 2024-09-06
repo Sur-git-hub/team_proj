@@ -4,19 +4,20 @@ WITH sales_per_ bike AS (
          c.model,
            c.motor_type,
            c.year_of_production,
-           AVG(cs.sales)::INT AS a
+           AVG(cs.sales)::INT AS average_sales_2024
     FROM cars c JOIN car_sales cs ON c.id = cs.cars_id
-    WHERE c.year_of_production > 2024
+    WHERE c.year_of_production  2024
     GROUP BY c.id, c.car_make, c.model, c.motor_type, c.year_of_production
 ),
------add yearly sale 2020
+ -----add yearly sale 2020
 budget_per_annually AS (
     SELECT *,
          average_sales_2024 * 12 AS annual_planned_sales_2020
     FROM sales_per_car
 )
 
---by shree raksha 
+
+ ---- changes made by raksha    
 SELECT b.car_make,
      b.model,
      b.motor_type,
@@ -27,6 +28,4 @@ SELECT b.car_make,
 FROM budget_per_annually b
 JOIN car_sales cs
 ON b.id = cs.cars_id
-GROUP BY b.car_make, b.model, b.motor_type, b.year_of_production, b.annual_planned_sales_2020;
---- This statement shows the values of Car Sales per annually where year is = 2020
-
+GROUP BY b.car_make, b.model, b.motor_type, b.year_of_production, b.annual_planned_sales_2024;
