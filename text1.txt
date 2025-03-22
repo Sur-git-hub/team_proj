@@ -1,1 +1,4 @@
-here is my text1.txt
+Hello everyone!!
+Hey this is one important thing we want to learn git commands 
+The Merck Group, branded and commonly known as Merck, is a German multinational science and technology company headquartered in Darmstadt, with about 60,000 employees and a presence in 66 countries. The group includes around 250 companies; the main company is Merck KGaA in Germany. The company is divided into three business lines: Healthcare, Life Sciences and Electronics. Merck was founded in 1668 and is the world's oldest operating chemical and pharmaceutical company, as well as one of the largest pharmaceutical companies globally.[6][7]
+Merck operates in Europe, Africa, Asia, Oceania and the Americas. It has major research and development centres in Darmstadt, Boston, Tokyo and Beijing, as well as other Research and Development units in Taiwan, France, Israel, South Korea, India, and the UK.[8] Merck pioneered the commercial manufacture of morphine in the 19th century and for a time held a virtual monopoly on cocaine.
